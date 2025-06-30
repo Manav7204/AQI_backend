@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // 🔗 Replace this with your running FastAPI server URL if different
-        fetch("http://127.0.0.1:8000/predict")
+        fetch("https://aqi-backend-itir.onrender.com/predict")
             .then(response => {
                 if (!response.ok) {
                     throw new Error("FastAPI server did not respond correctly.");
