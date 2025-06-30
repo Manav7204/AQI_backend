@@ -13,7 +13,7 @@ LON = "72.8777"
 OWM_API_KEY = "c602c5bd6e4ee77a0c374a852727a1e7"
 WAQI_TOKEN = "03a9abaa1a29a978a65f35237a8b0502c434d5e5"
 
-MODEL_PATH = r"models\aqi_model.joblib"
+MODEL_PATH = r"models/aqi_model.joblib"
 FEATURES = [
     "AQI", "PM2.5", "PM10", "NO2", "SO2", "CO", "O3",
     "temperature_2m", "relative_humidity_2m", "wind_speed_10m"
