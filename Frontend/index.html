@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AQI Prediction</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">🌫️ Air Quality Prediction</h1>
+
+        <!-- Prediction Section -->
+        <div class="predict-section">
+            <div class="left-box">
+                <label for="cityInput">Select City:</label>
+                <input list="cities" id="cityInput" placeholder="Search city..." />
+                <datalist id="cities">
+                    <select id="city" class="dropdown">
+                        <option value="Mumbai">Mumbai</option>
+                    </select>
+                </datalist>
+                <button id="predictBtn">Predict</button>
+            </div>
+
+            <div class="right-box" id="resultBox">
+                <h2>Prediction Result</h2>
+                <div class="aqi-info scrollable">
+                    <p><strong>Predicted AQI:</strong> <span id="predictedAqi">--</span></p>
+                    <p><strong>Current AQI:</strong> <span id="currentAqi">--</span></p>
+                    <p><strong>Date:</strong> <span id="dateInfo">--</span></p>
+                    <div class="feature-list">
+                        <h3>Pollutants & Weather</h3>
+                        <ul id="featureData"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AQI Category Table -->
+        <section class="aqi-table-section">
+            <h2>AQI Category Guide</h2>
+            <table class="aqi-table">
+                <tr>
+                    <th>Category</th>
+                    <th>Range</th>
+                    <th>Health Impact</th>
+                </tr>
+                <tr class="good">
+                    <td>Good</td>
+                    <td>0–50</td>
+                    <td>Air quality is satisfactory</td>
+                </tr>
+                <tr class="moderate">
+                    <td>Moderate</td>
+                    <td>51–100</td>
+                    <td>Acceptable; some pollutants may be concern</td>
+                </tr>
+                <tr class="unhealthy-sensitive">
+                    <td>Unhealthy for Sensitive Groups</td>
+                    <td>101–150</td>
+                    <td>May affect people with respiratory problems</td>
+                </tr>
+                <tr class="unhealthy">
+                    <td>Unhealthy</td>
+                    <td>151–200</td>
+                    <td>Health effects possible for everyone</td>
+                </tr>
+                <tr class="very-unhealthy">
+                    <td>Very Unhealthy</td>
+                    <td>201–300</td>
+                    <td>Serious health effects likely</td>
+                </tr>
+                <tr class="hazardous">
+                    <td>Hazardous</td>
+                    <td>301–500</td>
+                    <td>Everyone should avoid outdoor activities</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Info Section -->
+        <section class="info-section">
+            <h2>About AQI</h2>
+            <p>The Air Quality Index (AQI) helps you understand how clean or polluted the air is. It uses data from
+                pollutant concentrations and weather to rate how safe the air is to breathe.</p>
+        </section>
+
+        <!-- Images Section -->
+        <section class="image-gallery">
+            <h2>Air Pollution Effects</h2>
+            <div class="image-row">
+                <img src="https://images.unsplash.com/photo-1549887534-4c63bfb6a3c2" alt="Smog city" />
+                <img src="https://images.unsplash.com/photo-1582457572008-4c2f945fcad2" alt="Pollution impact" />
+                <img src="https://images.unsplash.com/photo-1610200730003-bf0d3b86b69e" alt="Mask and air pollution" />
+            </div>
+        </section>
+
+        <footer>
+            <p>Breathe Easy, Live Smart 💨</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
