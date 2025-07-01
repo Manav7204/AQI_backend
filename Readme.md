@@ -60,8 +60,8 @@ AQI_Prediction/
 
 ## 🔗 Live Demo
 
-Frontend: [aqi-ui-manav.vercel.app](https://your-vercel-link.vercel.app)  
-Backend API: [aqi-api-manav.onrender.com](https://your-render-link.onrender.com/predict)
+Frontend: [https://aqi-prediction-virid.vercel.app/]  
+Backend API: [https://aqi-backend-itir.onrender.com]
 
 ---
 
