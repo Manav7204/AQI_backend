@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     const predictBtn = document.getElementById("predictBtn");
 
