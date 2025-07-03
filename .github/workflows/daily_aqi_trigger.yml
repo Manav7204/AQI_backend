@@ -1,0 +1,15 @@
+name: Daily AQI Trigger
+
+on:
+  schedule:
+    - cron: "30 5 * * *"  # Triggers at 11:30 AM IST
+  workflow_dispatch:
+
+jobs:
+  ping_api:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hit FastAPI /predict endpoint
+        run: |
+          curl --silent --show-error --fail https://aqi-backend-itir.onrender.com/predict
