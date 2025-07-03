@@ -2,8 +2,8 @@ name: Daily AQI Trigger
 
 on:
   schedule:
-    - cron: "30 5 * * *"  # Triggers at 11:30 AM IST
-  workflow_dispatch:
+    - cron: "0 6 * * *"  # Runs daily at 6 AM UTC (11:30 AM IST)
+  workflow_dispatch:   
 
 jobs:
   ping_api:
